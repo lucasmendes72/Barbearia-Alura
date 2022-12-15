@@ -1,0 +1,332 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: linear-gradient(90deg, #FEFEFE, #4F4F4F);
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 21px;
+	text-decoration: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 30%;
+	margin: 0 1.5px;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+	color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+	font-size: 1.5em;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url(bg.jpg);
+	padding: 40px 0;
+}
+
+.copyright {
+	color: white;
+	font-size: 14px;
+	margin: 20px 0 0;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: #B8860B;;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: #DAA520;
+	font-size: 19px;
+	transform: scale(1.05);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+table:hover {
+	font-size: 18px;
+}
+
+thead {
+	background: #B8860B;
+	color: white;
+}
+
+#coluna-unica {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+td {
+	border: 1px solid #BBBBBB;
+}
+
+td, th {
+	padding: 8px 15px;
+}
+
+/* css da página inicial */
+
+.banner {
+	width: 100%;
+}
+
+.principal {
+	margin: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 1em 0 1em;
+	clear: left;
+}
+
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.principal p {
+	margin: 0 0 1em;
+	line-height: 1.5em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.beneficios {
+	background: linear-gradient(#FEFEFE, #4F4F4F);
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+	opacity: 0.9;
+}
+
+.itens:before {
+	content: "★";
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:hover {
+	font-size: 1.1em;
+	opacity: 1;
+}
+
+.imagemBeneficios {
+	width: 60%;
+	opacity: 0.8;
+	transition: 1s;
+	box-shadow: 10px 10px 10px 10px #000000;
+}
+
+.imagemBeneficios:hover {
+	opacity: 1;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto 0 auto;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: #4F4F4F;
+}
+
+.mapa h3 {
+	text-shadow: 5px 5px 5px #000000;
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em 0;
+	text-align: center;
+}
+
+@media screen and (max-device-width: 480px) {
+	/* Modificações Responsivas da Página Principal - Home */
+	.caixa, .principal, .conteudo-beneficios, .video, .mapa-conteudo {
+		width: auto;
+	}
+
+	.principal {
+		margin: 0 10px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios {
+		width: 100%;
+		margin: 0 10px;
+	}
+
+	.imagemBeneficios {
+		width: 100%;
+		margin: 30px 10px
+	}
+
+	.video {
+		margin: 0 10px;
+	}
+	/* Modificações Responsivas da Página Produtos */
+
+	.produtos {
+		width: auto;
+	}
+
+	.imagens-produtos {
+		width: 100%;
+	}
+
+	.produtos li {
+		box-sizing: border-box;
+		width: 30%;
+		height: 340px;
+	}
+
+	.produto-descricao {
+		line-height: 1.5em;
+		font-size: 16px;
+	}
+	/* Modificações Responsivas da Página Contato */
+
+	form {
+	margin: 40px 20px;
+    }
+
+    table {
+    	margin: 20px 0 20px 20px;
+    }
+}
+
+
+
